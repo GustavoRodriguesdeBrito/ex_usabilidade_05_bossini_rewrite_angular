@@ -1,0 +1,13 @@
+<div class="col">
+  <article class="card mx-1 my-1">
+      <div class="row no-gutters">
+        <div class="col-sm-12 col-lg-6 align-content-center">
+            <img class="mx-auto d-block" src="../../../assets/img/prof_img/{{prof.foto}}.jpg" alt="foto do professor">
+        </div>
+        <div [attr.id]="prof.id" class="card-body px-3 col-md-auto">
+        <h4 class="card-title">{{ prof.nome }}</h4>
+        <p class="card-text">{{ prof.disciplina }}</p>
+        </div>
+    </div>
+  </article>
+</div>

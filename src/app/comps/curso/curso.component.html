@@ -1,0 +1,20 @@
+<div class="col">
+  <article class="card mx-1 my-1">
+    <div class="card-header">
+      <a href="#" (click)="toggleCollapse($event)">{{ curso.titulo }}</a><fa-icon class="float-right" [icon]="switcher"></fa-icon>
+    </div>
+    <div
+      [attr.id]="curso.id"
+      class="card-body collapse"
+      [ngbCollapse]="collapsed"
+      [attr.aria-expanded]="!collapsed"
+      data-parent="#card-container"
+    >
+      <h4 class="card-title">{{ curso.titulo }}</h4>
+      <p class="card-text">
+        {{ curso.descricao }}
+      </p>
+      <a href="#" (click)="$event.preventDefault()" class="btn btn-primary">Saiba mais</a>
+    </div>
+  </article>
+</div>

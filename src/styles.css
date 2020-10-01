@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+#banner {
+    background-image: linear-gradient(#00000080, #000000b3),
+        url(assets/img/download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*min-height:60vh;*/
+}
